@@ -1,0 +1,21 @@
+#Ansible Task :install ngnix on Pathnex server
+-name: Install Ngnix on Pathnex server
+ host: all
+ become: yes
+
+ tasks:
+   - name: install ngnix
+      yum: 
+        name: ngnix server
+        state: present
+
+           
+#Install Docker
+docker --version 
+docker run ubuntu echo "Hello Abdul"
+
+
+#Docker File
+FROM ubuntu:22.04
+CMD ["echo","Hello Abdul"]
+
